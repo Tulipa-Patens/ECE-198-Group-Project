@@ -47,23 +47,6 @@ Create and switch to a new feature branch:
 git switch -c <feature-branch-name>
 ```
 
-Choose a descriptive branch name. For example:
-
-```bash
-git switch -c feature/login-page
-git switch -c feature/database-setup
-git switch -c bugfix/navigation-menu
-git switch -c docs/setup-guide
-```
-
-A useful naming format is:
-
-```text
-feature/<short-description>
-bugfix/<short-description>
-docs/<short-description>
-```
-
 All changes and commits related to your task should be made on your feature branch, not directly on `main`.
 
 You can check which branch you are currently using with:
@@ -106,7 +89,7 @@ Create a commit with a clear and descriptive message:
 git commit -m "<commit-message>"
 ```
 
-Conventional Commit messages are preferred but are not required. Common types include:
+Conventional Commit messages are preferred but are not required.
 
 ```text
 feat:     add a new feature
@@ -128,10 +111,6 @@ The `-u` option connects your local branch to the remote branch. After the first
 ```bash
 git push
 ```
-
-After pushing, create a pull request if your group uses pull requests for review. The pull request should merge your feature branch into the repository's `main` branch.
-
-Before requesting a merge, run the project's required tests, formatting checks, and linting commands.
 
 ## Merge and Clean Up
 
